@@ -1,0 +1,109 @@
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body, html{
+    min-height: 412px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 5, 5);
+}
+
+.container{
+    background-image: url(/img/backgroundClock.jpg);
+    background-position: center left;
+    background-size: cover;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container .alarm-container{
+    min-heigh:410px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(27, 27, 27, 0.856);
+    box-shadow: 5px 9px 95px rgb(255, 255, 255);
+    color: #fff;
+}
+.container .alarm-container img{
+    width: 80px;
+    margin-top: 20px;
+    max-width: 125px;
+    border-radius:50%;
+}
+ .alarm-container h1{
+    font-family: 'Bungee', cursive;
+
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30PX 0;
+    
+    border-bottom: 1px solid #fff;
+    color: rgb(245, 245,245);
+ }
+ .content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+ }
+
+ .content.disable{
+    cursor: no-drop;
+ }
+ .container .content .alarm-controls{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid rgb(245, 245,245);
+   margin: 5px;
+ }
+ .content.disable .alarm-controls{
+    opacity: .6;
+    pointer-events: none;
+}
+.container .content select{
+    margin: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(245, 245,245);
+}
+
+.container  .content select option{
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000;
+}
+
+.container button{
+    width: 435px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ff000093;
+    color: rgb(255, 255, 255);
+}
+
