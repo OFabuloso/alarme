@@ -15,7 +15,7 @@ body, html{
 }
 
 .container{
-    background-image: url(/img/backgroundClock.jpg);
+    background-image: url(img/backgroundClock.jpg);
     background-position: center left;
     background-size: cover;
     width: 1200px;
